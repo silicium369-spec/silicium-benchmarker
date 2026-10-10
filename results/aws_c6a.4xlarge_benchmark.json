@@ -1,0 +1,44 @@
+{
+  "instance_type": "c6a.4xlarge",
+  "cpu_model": "AMD EPYC 7R13 Processor",
+  "get_root_64_conns": {
+    "requests_per_sec": 675281.44,
+    "p50_latency": "76.00us",
+    "p75_latency": "90.00us",
+    "p90_latency": "103.00us",
+    "p99_latency": "125.00us",
+    "raw": "Running 10s test @ http://127.0.0.1:3000/\n  8 threads and 64 connections\n  Thread Stats   Avg      Stdev     Max   +/- Stdev\n    Latency    71.44us   52.11us   3.99ms   98.81%\n    Req/Sec    84.84k     1.00k   87.18k    68.07%\n  Latency Distribution\n     50%   76.00us\n     75%   90.00us\n     90%  103.00us\n     99%  125.00us\n  6820485 requests in 10.10s, 826.07MB read\nRequests/sec: 675281.44\nTransfer/sec:     81.79MB"
+  },
+  "get_root_256_conns": {
+    "requests_per_sec": 698422.54,
+    "p50_latency": "175.00us",
+    "p75_latency": "195.00us",
+    "p90_latency": "349.00us",
+    "p99_latency": "380.00us",
+    "raw": "Running 10s test @ http://127.0.0.1:3000/\n  8 threads and 256 connections\n  Thread Stats   Avg      Stdev     Max   +/- Stdev\n    Latency   208.02us  149.07us   8.87ms   93.36%\n    Req/Sec    88.29k     0.98k   91.12k    86.18%\n  Latency Distribution\n     50%  175.00us\n     75%  195.00us\n     90%  349.00us\n     99%  380.00us\n  7053937 requests in 10.10s, 854.35MB read\nRequests/sec: 698422.54\nTransfer/sec:     84.59MB"
+  },
+  "get_root_512_conns": {
+    "requests_per_sec": 696469.75,
+    "p50_latency": "359.00us",
+    "p75_latency": "377.00us",
+    "p90_latency": "407.00us",
+    "p99_latency": "744.00us",
+    "raw": "Running 10s test @ http://127.0.0.1:3000/\n  8 threads and 512 connections\n  Thread Stats   Avg      Stdev     Max   +/- Stdev\n    Latency   397.28us  332.27us  16.15ms   97.11%\n    Req/Sec    87.62k     1.32k   94.19k    93.00%\n  Latency Distribution\n     50%  359.00us\n     75%  377.00us\n     90%  407.00us\n     99%  744.00us\n  6974882 requests in 10.01s, 844.77MB read\nRequests/sec: 696469.75\nTransfer/sec:     84.35MB"
+  },
+  "get_user_id_256_conns": {
+    "requests_per_sec": 702309.78,
+    "p50_latency": "175.00us",
+    "p75_latency": "195.00us",
+    "p90_latency": "348.00us",
+    "p99_latency": "379.00us",
+    "raw": "Running 10s test @ http://127.0.0.1:3000/user/1337\n  8 threads and 256 connections\n  Thread Stats   Avg      Stdev     Max   +/- Stdev\n    Latency   204.05us   72.23us   1.08ms   80.64%\n    Req/Sec    88.67k     1.26k   93.84k    81.59%\n  Latency Distribution\n     50%  175.00us\n     75%  195.00us\n     90%  348.00us\n     99%  379.00us\n  7093602 requests in 10.10s, 0.87GB read\nRequests/sec: 702309.78\nTransfer/sec:     87.74MB"
+  },
+  "post_user_256_conns": {
+    "requests_per_sec": 696629.14,
+    "p50_latency": "175.00us",
+    "p75_latency": "196.00us",
+    "p90_latency": "350.00us",
+    "p99_latency": "379.00us",
+    "raw": "Running 10s test @ http://127.0.0.1:3000/user\n  8 threads and 256 connections\n  Thread Stats   Avg      Stdev     Max   +/- Stdev\n    Latency   205.59us   73.02us 686.00us   80.48%\n    Req/Sec    88.16k   739.56    90.33k    69.45%\n  Latency Distribution\n     50%  175.00us\n     75%  196.00us\n     90%  350.00us\n     99%  379.00us\n  7035459 requests in 10.10s, 852.11MB read\nRequests/sec: 696629.14\nTransfer/sec:     84.37MB"
+  }
+}
